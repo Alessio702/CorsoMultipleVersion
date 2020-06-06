@@ -1,0 +1,13 @@
+127.0.0.1 - - [31/May/2020:20:28:48 +0200] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [31/May/2020:20:28:48 +0200] "GET /WebHbCorso/ HTTP/1.1" 404 1016
+127.0.0.1 - - [31/May/2020:20:30:41 +0200] "GET / HTTP/1.1" 404 994
+127.0.0.1 - - [31/May/2020:20:31:26 +0200] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [31/May/2020:20:31:26 +0200] "GET /WebHbCorso/ HTTP/1.1" 404 1016
+0:0:0:0:0:0:0:1 - - [31/May/2020:20:32:28 +0200] "GET /WebHbCorso/CtrlMain HTTP/1.1" 200 1228
+0:0:0:0:0:0:0:1 - - [31/May/2020:20:33:09 +0200] "POST /WebHbCorso/CtrlMain HTTP/1.1" 200 820
+0:0:0:0:0:0:0:1 - - [31/May/2020:20:33:12 +0200] "POST /WebHbCorso/CtrlArchivioDocente HTTP/1.1" 200 1228
+127.0.0.1 - - [31/May/2020:20:37:07 +0200] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [31/May/2020:20:37:10 +0200] "GET /Struts2Example/ HTTP/1.1" 200 1888
+0:0:0:0:0:0:0:1 - - [31/May/2020:20:37:44 +0200] "POST /Struts2Example/Main.action;jsessionid=BD931A7B1AE28886363D1F150C906FFF HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [31/May/2020:20:38:15 +0200] "GET /Struts2Example/Docente.action HTTP/1.1" 200 722
+0:0:0:0:0:0:0:1 - - [31/May/2020:20:39:29 +0200] "POST /Struts2Example/Docente.action HTTP/1.1" 200 1823

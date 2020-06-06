@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 9-set-2019 9.25.32 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+	<class name="model.session.Aula" table="HB_AULA">
+		<id name="id" type="int">
+			<column name="ID" />
+			<generator class="increment" />
+		</id>
+		<property name="descrizione" type="java.lang.String">
+			<column name="DESCRIZIONE" />
+		</property>
+		<property name="numeroposti" type="java.lang.String">
+			<column name="NUMERO POSTI" />
+		</property>
+	</class>
+</hibernate-mapping>

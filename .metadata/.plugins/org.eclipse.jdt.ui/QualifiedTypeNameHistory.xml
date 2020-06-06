@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="model.dao.CorsoService"/>
+    <fullyQualifiedTypeName name="model.session.Corso"/>
+    <fullyQualifiedTypeName name="org.hibernate.annotations.FetchMode"/>
+    <fullyQualifiedTypeName name="org.hibernate.annotations.Fetch"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
+    <fullyQualifiedTypeName name="org.apache.struts.action.ActionMapping"/>
+    <fullyQualifiedTypeName name="controller.form.MainForm"/>
+    <fullyQualifiedTypeName name="org.apache.struts.actions.DispatchAction"/>
+    <fullyQualifiedTypeName name="org.apache.struts.action.ActionForward"/>
+    <fullyQualifiedTypeName name="controller.form.DocenteForm"/>
+    <fullyQualifiedTypeName name="com.nimbusds.jose.util.StringUtils"/>
+    <fullyQualifiedTypeName name="org.apache.struts.action.ActionMessage"/>
+    <fullyQualifiedTypeName name="org.apache.struts.action.ActionForm"/>
+    <fullyQualifiedTypeName name="org.apache.struts.action.ActionErrors"/>
+    <fullyQualifiedTypeName name="model.session.Discente"/>
+    <fullyQualifiedTypeName name="model.dao.DiscenteService"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="org.apache.commons.lang3.StringUtils"/>
+    <fullyQualifiedTypeName name="model.dao.DocenteService"/>
+    <fullyQualifiedTypeName name="javax.persistence.Table"/>
+    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
+    <fullyQualifiedTypeName name="javax.persistence.Column"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="model.dao.AbstractService"/>
+    <fullyQualifiedTypeName name="model.dao.AbstractDAO"/>
+    <fullyQualifiedTypeName name="model.session.Persona"/>
+    <fullyQualifiedTypeName name="model.dao.PersonaService"/>
+    <fullyQualifiedTypeName name="org.apache.struts2.interceptor.SessionAware"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="org.apache.commons.lang.StringUtils"/>
+    <fullyQualifiedTypeName name="model.session.Materia"/>
+    <fullyQualifiedTypeName name="model.dao.MateriaService"/>
+    <fullyQualifiedTypeName name="com.opensymphony.xwork2.ActionSupport"/>
+    <fullyQualifiedTypeName name="model.session.Docente"/>
+    <fullyQualifiedTypeName name="model.session.Aula"/>
+</qualifiedTypeNameHistroy>

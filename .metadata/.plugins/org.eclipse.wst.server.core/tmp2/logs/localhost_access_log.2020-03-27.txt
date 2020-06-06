@@ -1,0 +1,6 @@
+127.0.0.1 - - [27/Mar/2020:09:36:18 +0100] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [27/Mar/2020:09:36:20 +0100] "GET /Struts2Example/ HTTP/1.1" 200 1888
+127.0.0.1 - - [27/Mar/2020:09:41:24 +0100] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [27/Mar/2020:09:41:26 +0100] "GET /Struts2Example/ HTTP/1.1" 200 1888
+0:0:0:0:0:0:0:1 - - [27/Mar/2020:09:41:28 +0100] "POST /Struts2Example/Main.action;jsessionid=09CA9CA8BC08AE3EE853996D06171A23 HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [27/Mar/2020:09:41:52 +0100] "GET /Struts2Example/Docente.action HTTP/1.1" 200 68305

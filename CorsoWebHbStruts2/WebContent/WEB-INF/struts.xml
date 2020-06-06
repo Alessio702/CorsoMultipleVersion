@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<constant name="struts.devMode" value="true" />
+	<package name="default" extends="struts-default">
+		<!-- <action name="Login"> <result>pages/login.jsp</result> </action> -->
+		<action name="Main" class="controller.MainAction">
+			<result name="input">Applicazione/PgsMain.jsp</result>
+			<result type="redirectAction" name="DocenteRedirect">Docente</result>
+			<result type="redirectAction" name="DiscenteRedirect">Discente</result>
+			<result type="redirectAction" name="CorsoRedirect">Corso</result>
+			<result type="redirectAction" name="MateriaRedirect">Materia</result>
+			<result type="redirectAction" name="PersonaRedirect">Persona</result>
+			<result type="redirectAction" name="DragRedirect">DragDrop</result>
+		</action>
+
+		<action name="DragDrop" class="controller.DragDrop">
+			<result name="search">ArchivioDocente/DragDrop.jsp</result>
+		</action>
+
+		<action name="Persona" class="controller.GestionePersona">
+			<result name="search">GestionePersona/PgsGestionePersona.jsp</result>
+		</action>
+
+		<action name="Materia" class="controller.GestioneMateria">
+			<result name="search">GestioneMateria/PgsGestioneMateria.jsp</result>
+			<result name="nuovo">GestioneMateria/PgsGestioneMateriaNuovoModifica.jsp
+			</result>
+			<result name="modifica">GestioneMateria/PgsGestioneMateriaNuovoModifica.jsp
+			</result>
+		</action>
+
+		<action name="Docente" class="controller.GestioneDocente">
+			<result name="search">ArchivioDocente/PgsArchivioDocente.jsp</result>
+			<result name="modifica">ArchivioDocente/PgsArchivioDocenteNuovoModifica.jsp
+			</result>
+			<result name="nuovo">ArchivioDocente/PgsArchivioDocenteNuovoModifica.jsp
+			</result>
+			<result name="nuovomodifica">ArchivioDocente/PgsArchivioDocenteNuovoModifica.jsp
+			</result>
+		</action>
+
+		<action name="Discente" class="controller.GestioneDiscente">
+			<result name="search">ArchivioDiscente/PgsArchivioDiscente.jsp</result>
+			<result name="nuovo">ArchivioDiscente/PgsArchivioDiscenteNuovoModifica.jsp
+			</result>
+			<result name="modifica">ArchivioDiscente/PgsArchivioDiscenteNuovoModifica.jsp
+			</result>
+		</action>
+
+
+		<action name="Corso" class="controller.GestioneCorso">
+			<result name="search">GestioneCorso/PgsGestioneCorso.jsp</result>
+			<result name="nuovo">GestioneCorso/PgsGestioneCorsoNuovoModifica.jsp
+			</result>
+			<result name="nuovomodifica">GestioneCorso/PgsGestioneCorsoNuovoModifica.jsp
+			</result>
+			<result name="modifica">GestioneCorso/PgsGestioneCorsoNuovoModifica.jsp
+			</result>
+		</action>
+	</package>
+
+</struts>

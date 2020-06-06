@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 9-set-2019 9.25.32 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="model.session.Studente" table="STUDENTE">
+        <id name="id" type="int">
+            <column name="ID" />
+           <generator class="increment" />
+        </id>
+        <property name="cognome" type="java.lang.String">
+            <column name="COGNOME" />
+        </property>
+        <property name="nome" type="java.lang.String">
+            <column name="NOME" />
+        </property>
+        <property name="matricola" type="java.lang.String">
+            <column name="MATRICOLA" />
+        </property>
+        
+         <!--  <bag name="corsi" table="corso_partecipanti" 
+        	inverse="false" lazy="false" fetch="select" >
+            <key>
+                <column name="STUDENTE" not-null="true" />
+            </key>
+            <many-to-many entity-name="test_hb.model.Corso">
+                <column name="CORSO" not-null="true" />
+            </many-to-many>
+        </bag> -->
+        
+        <!--  
+         <bag name="corsi" table="CORSO"  fetch="select"  lazy="false">
+			<key>
+				<column name="CORSO" not-null="false" />
+			</key>
+			<one-to-many class="test_hb.model.Corso" />
+		</bag>
+		-->
+       <!--  <list name="corsi" inverse="false" table="CORSO" lazy="true">
+            <key>
+                <column name="ID" />
+            </key>
+            <list-index></list-index>
+            <one-to-many class="test_hb.model.Corso" />
+        </list>
+         -->
+    </class>
+</hibernate-mapping>

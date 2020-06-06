@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 9-set-2019 9.25.32 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+	<class name="model.session.Corso" table="HB_Corso">
+		<id name="id" type="int">
+			<column name="ID" />
+			<generator class="increment" />
+		</id>
+
+		<!-- QUA ANDRà INSERITO DOCENTE E AULA -->
+		<many-to-one name="docente" class="model.session.Docente"
+			fetch="join">
+			<column name="IDDOCENTE" />
+		</many-to-one>
+		<many-to-one name="aula" class="model.session.Aula"
+			fetch="join">
+			<column name="IDAULA" />
+		</many-to-one>
+		<bag name="partecipanti" table="hb_corso_discenti" inverse="true"
+			lazy="false" fetch="select" cascade="save-update,delete">
+			<key>
+				<column name="CORSO" not-null="true" />
+			</key>
+			<many-to-many entity-name="model.session.Studente">
+				<column name="STUDENTE" not-null="true" />
+			</many-to-many>
+		</bag>
+		<property name="corso" type="java.lang.String">
+			<column name="CORSO" />
+		</property>
+		<property name="durata" type="java.lang.String">
+			<column name="DURATA" />
+		</property>
+		<property name="datainizio" type="java.util.Date">
+			<column name="DATAINIZIO" />
+		</property>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC 
+"-//Apache Software Foundation//DTD Struts Configuration 1.3//EN" 
+"http://jakarta.apache.org/struts/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+
+	<form-beans>
+		<form-bean name="MainForm" type="controller.form.MainForm" />
+		<form-bean name="DocenteForm" type="controller.form.DocenteForm" />
+		<form-bean name="DiscenteForm" type="controller.form.DiscenteForm" />
+		<form-bean name="CorsoForm" type="controller.form.CorsoForm" />		
+	</form-beans>
+
+	<global-forwards>
+		<forward name="start" path="/Main.do?metodo=menu"></forward>
+	</global-forwards>
+
+	<action-mappings>
+	
+		<action path="/Corso" parameter="metodo" type="controller.action.CorsoAction" name="CorsoForm">
+				<forward name="elenco" path="/GestioneCorso/PgsGestioneCorso.jsp"/>
+				<forward name="nuovo" path="/GestioneCorso/PgsGestioneCorsoNuovo.jsp"/>
+				<forward name="modifica" path="/GestioneCorso/PgsGestioneCorsoModifica.jsp"/>
+				<forward name="partecipanti" path="/GestioneCorso/PgsElencoPartecipanti.jsp"/>
+				<forward name="elimina" path="/GestioneCorso/PgsGestionePartecipanti.jsp"/>
+				<forward name="inserisci_partecipante" path="/GestioneCorso/PgsGestionePartecipanti.jsp"/>
+				<forward name="elimina" path="/GestioneCorso/PgsGestionePartecipanti.jsp"/>
+		</action>
+	
+		<action path="/Docente" parameter="metodo" type="controller.action.DocenteAction" name="DocenteForm">
+				<forward name="elenco" path="/ArchivioDocente/PgsArchivioDocente.jsp"/>
+				<forward name="nuovo" path="/ArchivioDocente/PgsArchivioDocenteNuovoModifica.jsp"/>
+				<forward name="modifica" path="/ArchivioDocente/PgsArchivioDocenteNuovoModifica.jsp"/>
+		</action>
+		
+		<action path="/Discente" parameter="metodo" type="controller.action.DiscenteAction" name="DiscenteForm">
+				<forward name="elenco" path="/ArchivioDiscente/PgsArchivioDiscente.jsp"/>
+				<forward name="nuovo" path="/ArchivioDiscente/PgsArchivioDiscenteNuovoModifica.jsp"/>
+				<forward name="modifica" path="/ArchivioDiscente/PgsArchivioDiscenteNuovoModifica.jsp"/>
+		</action>
+		
+		
+		<action path="/Main" parameter="metodo" type="controller.action.MainAction" name="MainForm">
+			<forward name="caricaMenu" path="/Applicazione/PgsMain.jsp" />
+			<forward name="0" path="/Docente.do?metodo=visualizzaElenco" />
+			<forward name="1" path="/Discente.do?metodo=visualizzaElenco" />
+			<forward name="2" path="/Corso.do?metodo=visualizzaElenco" />
+			<forward name="3" path="" />
+			<forward name="4" path="" />
+		</action>
+		
+	</action-mappings>
+	
+	
+	<message-resources parameter="impostazioni"></message-resources>
+
+</struts-config>
