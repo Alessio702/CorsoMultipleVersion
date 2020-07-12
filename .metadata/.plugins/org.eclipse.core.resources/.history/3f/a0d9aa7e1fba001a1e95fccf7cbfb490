@@ -1,0 +1,22 @@
+package com.example.demo.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+@RequestMapping(value = "/Test")
+public class ProvaController {
+	
+	@GetMapping(value = "/test/{nome}")
+	public ModelAndView getGreetings(@PathVariable("nome") String nome) {
+		ModelAndView model = new ModelAndView();
+		model.addObject("nome", nome);
+		model.setViewName("test");
+		return model;
+	}
+	
+	
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;list.jsp&apos; to &apos;Aula&apos;" description="Move &apos;list.jsp&apos; to &apos;Aula&apos;" destination="src/main/webapp/WEB-INF/views/Aula" element1="src/main/webapp/WEB-INF/views/list.jsp" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1593686728664" updateReferences="true"/>
+</session>
